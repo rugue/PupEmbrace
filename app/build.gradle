@@ -38,6 +38,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "1.8"
+        useIR = true
     }
 
     buildFeatures {
@@ -78,4 +79,7 @@ dependencies {
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
+    //Navigation
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha08"
 }
